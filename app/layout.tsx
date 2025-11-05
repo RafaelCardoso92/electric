@@ -13,13 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Professional Electrician Services | Licensed & Certified",
-  description: "Expert electrical services for residential and commercial properties. Licensed electrician offering emergency repairs, installations, rewiring, and safety inspections. Available 24/7 for emergencies.",
-  keywords: ["electrician", "electrical services", "emergency electrician", "electrical repairs", "rewiring", "electrical installation", "licensed electrician"],
-  authors: [{ name: "Professional Electrician" }],
+  title: "HSES Electrical Contractors | Wombwell, Barnsley | Licensed Electrician",
+  description: "Expert electrical services in Wombwell, Barnsley and surrounding areas. Over 10 years experience. Licensed electrician offering emergency repairs, installations, rewiring, and safety inspections. Available 24/7 for emergencies.",
+  keywords: ["electrician Wombwell", "electrician Barnsley", "electrical services", "emergency electrician", "electrical repairs", "rewiring", "electrical installation", "licensed electrician", "HSES Electrical"],
+  authors: [{ name: "HSES Electrical Contractors" }],
   openGraph: {
-    title: "Professional Electrician Services",
-    description: "Licensed electrician offering expert electrical services for homes and businesses",
+    title: "HSES Electrical Contractors | Wombwell, Barnsley",
+    description: "Licensed electrician offering expert electrical services for homes and businesses in Wombwell, Barnsley",
     type: "website",
   },
   viewport: "width=device-width, initial-scale=1",

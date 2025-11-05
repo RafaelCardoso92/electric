@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  electric:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: electric
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - PUID=1000
+      - PGID=1000
+    ports:
+      - "3006:3000"  # Local access on port 3006
+    networks:
+      - proxy
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.electric.rule=Host(`electric.rafaelcardoso.co.uk`)"
+      - "traefik.http.routers.electric.entrypoints=https"
+      - "traefik.http.routers.electric.tls.certresolver=cloudflare"
+      - "traefik.http.services.electric.loadbalancer.server.port=3000"
+
+networks:
+  proxy:
+    external: true
