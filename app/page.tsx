@@ -769,7 +769,20 @@ export default function Home() {
 
           <div className="border-t border-slate-800 pt-8">
             <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-slate-400">
-              <p>&copy; 2025 HSES Electrical. All rights reserved.</p>
+              <div>
+                <p>&copy; 2025 HSES Electrical. All rights reserved.</p>
+                <p className="mt-1">
+                  Created by{' '}
+                  <a
+                    href="https://rafaelcardoso.co.uk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-red-600 hover:text-red-500 transition-colors font-semibold"
+                  >
+                    Rafael Cardoso
+                  </a>
+                </p>
+              </div>
               <div className="flex space-x-6 mt-4 sm:mt-0">
                 <a href="#" className="hover:text-red-600 transition-colors">Privacy Policy</a>
                 <a href="#" className="hover:text-red-600 transition-colors">Terms of Service</a>
